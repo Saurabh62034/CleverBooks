@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.home {
+    background-image: url("./img2.svg");
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.Acc-image {
+    background-image: linear-gradient(to bottom right, rgb(237, 189, 100), rgb(216, 41, 216));
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 300px) {
+    .cta {
+      padding-bottom: 20px;
+    }
+  }
+
+@media only screen and (min-width: 600px) {
+    .cta {
+      height: 50vh;
+      padding-bottom: 30px;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .cta {
+      height: 50vh;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 30px;
+    }
+  }
+.background-animate {
+    background-size: 400%;
+    overflow: hidden;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
